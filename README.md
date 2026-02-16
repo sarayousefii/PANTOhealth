@@ -80,6 +80,10 @@ Train Stations JSON
 
 📦 Deployment
 
-App can be deployed to Vercel, Netlify, or similar static hosting services.
+App is deployed on Vercel and can be accessed here:
+
+🌐 [Live Demo](https://pantohealth-l6lk9jftv-sars-projects-2bdc65e3.vercel.app)
+
+App can also be deployed to other static hosting services like Netlify if desired.
 
 Made with ❤️ using React & Leaflet
