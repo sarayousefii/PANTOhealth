@@ -18,8 +18,9 @@ function App() {
   if (error) return <div className="p-4 text-red-500">{error}</div>;
 
   return (
-    <div className="flex flex-col md:flex-row h-screen">
-      <div className="md:w-1/4 p-4">
+    <div className="flex flex-col md:flex-row min-h-screen">
+      {/* Sidebar */}
+      <div className="md:w-1/4 p-4 h-[50vh] md:h-auto overflow-y-auto bg-gray-50">
         <CityFilter value={cityFilter} onChange={setCityFilter} />
         <StationList
           stations={filteredStations}
@@ -28,10 +29,12 @@ function App() {
         />
       </div>
 
-      <div className="md:w-3/4">
+      {/* Map */}
+      <div className="md:w-3/4 h-[50vh] md:h-auto">
         <MapView
           stations={filteredStations}
           selectedStation={selectedStation}
+          onSelect={setSelectedStation}
         />
       </div>
     </div>
